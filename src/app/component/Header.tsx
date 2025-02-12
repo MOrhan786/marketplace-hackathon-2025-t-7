@@ -3,7 +3,7 @@ import React , {useState} from 'react';
 import { useRouter } from "next/navigation";
 import Image from 'next/image';
 import Link from 'next/link';
-import logoimg from '@/app/assets/header/Logo_image.png';
+import Logo_image from '@/app/assets/header/Logoimage.png';
 import logo from '@/app/assets/header/Logo.png';
 import Noti from '@/app/assets/header/Noti.png';
 import searchlogo from '@/app/assets/header/search-normal.png';
@@ -131,7 +131,7 @@ const Header = () => {
                 <SignInButton>
                   <div className="border-2 border-black flex items-center justify-center bg-white rounded-full p-1">
                     <Image
-                      src={logoimg}
+                      src={Logo_image}
                       alt="loading"
                       width={18}
                       height={18}
