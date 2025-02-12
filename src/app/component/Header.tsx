@@ -3,9 +3,7 @@ import React , {useState} from 'react';
 import { useRouter } from "next/navigation";
 import Image from 'next/image';
 import Link from 'next/link';
-import Logo_image from '@/app/assets/header/Logoimage.png';
-import logo from '@/app/assets/header/Logo.png';
-import Noti from '@/app/assets/header/Noti.png';
+import logoimg from '@/app/assets/header/Logo_image.png';
 import searchlogo from '@/app/assets/header/search-normal.png';
 import filter from '@/app/assets/header/filter.png';
 import heart from '@/app/assets/header/heart.png';
@@ -125,17 +123,15 @@ const Header = () => {
             </Link>
 
             <div>
-             
-
               <SignedOut>
                 <SignInButton>
                   <div className="border-2 border-black flex items-center justify-center bg-white rounded-full p-1">
                     <Image
-                      src={Logo_image}
+                      src={logoimg}
                       alt="loading"
                       width={18}
                       height={18}
-                      className="cursor-pointer"
+                      className="cursor-not-allowed"
                     />
                   </div>
                 </SignInButton>
@@ -146,15 +142,9 @@ const Header = () => {
                 </div>
               </SignedIn>
             </div>
-          
-          <div>
-          <Image src={Noti} alt="loading" width={35} height={35} className="cursor-allowed" />
-          </div>
-          <div>
-          <Image src={logo} alt="loading" width={35} height={35} className="cursor-allowed" />
           </div>
         </div>
-        </div>
+
         {/* Mobile search bar */}
         <div className="block sm:hidden px-[25px] ">
           <div className="flex shrink-0 items-center justify-center w-fit mx-auto border border-[#C3D4E9] rounded-xl">
